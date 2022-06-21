@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300&family=Petit+Formal+Script&display=swap');
+
+:root{
+    --font-normal:Verdana, Geneva, Tahoma, sans-serif;
+    --font-text:'Petit Formal Script', cursive;
+    --font-title: 'Laila', sans-serif;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+    
+}
+
+html, body {
+    min-height: 100vr;
+    background-color:darkgray;
+}
+header {
+    background-image: linear-gradient(black,rgb(54, 54, 54));
+    backdrop-filter: blur(100%);
+    text-align: center;
+    font-family: var(--font-title);
+    color: rgba(245, 245, 245, 0.699);
+}
+header > h1 {
+    padding-top: 10px;
+    font-variant: small-caps;
+    font-size:10vw;
+}
+header > p {
+    padding-bottom: 10px;
+}
+
+header a,footer a{  
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover,footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 30px;
+    font-family: var(--font-text);
+    font-size: 4.5%vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: rgb(228, 228, 228);
+    color: black;
+}
+
+section.imagem{
+    background-color:rgba(51, 51, 51, 0.164);
+    color: white;
+    box-shadow: 10px 10px 20px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-shadow:1px 1px 0.5px black;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+    
+
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: left center;
+}
+
+footer{
+    background-image: linear-gradient(black,rgb(39, 39, 39));
+    backdrop-filter: blur(100%);
+    text-align: center;
+    color: whitesmoke;
+    padding: 10px;
+    font-family: var(--font-title);
+}
